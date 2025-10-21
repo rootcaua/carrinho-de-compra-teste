@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loja</title>
+</head>
+<body>
+    <header>
+        <h1>Loja Virtual</h1>
+    </header>
+
+    <main>
+        <section class="produtos">
+            <h2>Produtos</h2>
+            <div class="lista-produtos">
+                <div class="produto">
+                    <h3>Camiseta</h3>
+                    <p>R$ 50,00</p>
+                    <button 
+                        class="add-carrinho"
+                        data-nome="Camiseta"
+                        data-preco="50"
+                    >Adicionar</button>
+                </div>
+                <div class="produto">
+                    <h3>Calça</h3>
+                    <p>R$ 80,00</p>
+                    <button 
+                        class="add-carrinho"
+                        data-nome="Calça"
+                        data-preco="80"
+                    >Adicionar</button>
+                </div>
+                <div class="produto">
+                    <h3>Tênis</h3>
+                    <p>R$ 250,00</p>
+                    <button 
+                        class="add-carrinho"
+                        data-nome="Tênis"
+                        data-preco="250"
+                    >Adicionar</button>
+                </div>
+            </div>
+        </section>
+        <section class="carrinho">
+            <h2>Carrinho</h2>
+            <ul id="lista-carrinho"></ul>
+            <p id="total">Total: R$ 0,00</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
