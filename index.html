@@ -1,55 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
     <link rel="stylesheet" href="style.css">
-    <title>Loja</title>
 </head>
 <body>
+    <div id="feedback" class="feedback"></div>
+    
     <header>
-        <h1>Loja Virtual</h1>
+        <h1>🛍️ Loja Virtual</h1>
     </header>
 
     <main>
         <section class="produtos">
-            <h2>Produtos</h2>
+            <h2>Nossos Produtos</h2>
             <div class="lista-produtos">
                 <div class="produto">
-                    <h3>Camiseta</h3>
+                    <h3>👕 Camiseta</h3>
                     <p>R$ 50,00</p>
                     <button 
                         class="add-carrinho"
                         data-nome="Camiseta"
-                        data-preco="50"
-                    >Adicionar</button>
+                        data-preco="50.00"
+                    >Adicionar ao Carrinho</button>
                 </div>
                 <div class="produto">
-                    <h3>Calça</h3>
+                    <h3>👖 Calça</h3>
                     <p>R$ 80,00</p>
                     <button 
                         class="add-carrinho"
                         data-nome="Calça"
-                        data-preco="80"
-                    >Adicionar</button>
+                        data-preco="80.00"
+                    >Adicionar ao Carrinho</button>
                 </div>
                 <div class="produto">
-                    <h3>Tênis</h3>
+                    <h3>👟 Tênis</h3>
                     <p>R$ 250,00</p>
                     <button 
                         class="add-carrinho"
                         data-nome="Tênis"
-                        data-preco="250"
-                    >Adicionar</button>
+                        data-preco="250.00"
+                    >Adicionar ao Carrinho</button>
                 </div>
             </div>
         </section>
+
         <section class="carrinho">
-            <h2>Carrinho</h2>
-            <ul id="lista-carrinho"></ul>
-            <p id="total">Total: R$ 0,00</p>
+            <h2>🛒 Carrinho de Compras</h2>
+            <ul id="lista-carrinho">
+                <li class="carrinho-vazio">Seu carrinho está vazio</li>
+            </ul>
+            <div id="total">Total: R$ 0,00</div>
+            <button class="btn-limpar" id="limpar-carrinho">Limpar Carrinho</button>
         </section>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
