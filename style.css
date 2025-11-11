@@ -6,15 +6,15 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #090909 0%, #949394 100%);
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
     min-height: 100vh;
     padding-bottom: 20px;
 }
 
 header {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(30, 30, 30, 0.95);
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     padding: 1.5em;
     text-align: center;
     position: sticky;
@@ -23,7 +23,7 @@ header {
 }
 
 header h1 {
-    color: #949394;
+    color: #e0e0e0;
     font-size: 2em;
     font-weight: 700;
 }
@@ -48,17 +48,17 @@ main {
 }
 
 .produtos, .carrinho {
-    background: white;
+    background: #1e1e1e;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
-    color: #949394;
+    color: #e0e0e0;
     margin-bottom: 25px;
     font-size: 1.8em;
-    border-bottom: 3px solid #667eea;
+    border-bottom: 3px solid #4a5568;
     padding-bottom: 10px;
 }
 
@@ -69,18 +69,18 @@ h2 {
 }
 
 .produto {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
     padding: 25px;
     border-radius: 15px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: #e0e0e0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .produto:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .produto h3 {
@@ -95,8 +95,8 @@ h2 {
 }
 
 button {
-    background: white;
-    color: #949394;
+    background: #2d3748;
+    color: #e0e0e0;
     border: none;
     padding: 12px 24px;
     border-radius: 25px;
@@ -104,12 +104,12 @@ button {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
 
 button:active {
@@ -127,13 +127,13 @@ button:active {
     align-items: center;
     padding: 15px;
     margin: 10px 0;
-    background: #f8f9fa;
+    background: #2d3748;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
 #lista-carrinho li:hover {
-    background: #e9ecef;
+    background: #374151;
     transform: translateX(5px);
 }
 
@@ -145,32 +145,32 @@ button:active {
 
 .item-nome {
     font-weight: 600;
-    color: #333;
+    color: #e0e0e0;
 }
 
 .item-preco {
-    color: #667eea;
+    color: #718096;
     font-weight: 500;
 }
 
 .remove {
-    background: #dc3545;
+    background: #991b1b;
     color: white;
     padding: 8px 16px;
     font-size: 0.9em;
 }
 
 .remove:hover {
-    background: #c82333;
+    background: #7f1d1d;
 }
 
 #total {
     font-size: 1.5em;
     font-weight: bold;
-    color: #667eea;
+    color: #9ca3af;
     text-align: right;
     padding: 20px;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(45, 55, 72, 0.3) 0%, rgba(26, 32, 44, 0.3) 100%);
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -178,17 +178,15 @@ button:active {
 .carrinho-vazio {
     text-align: center;
     padding: 40px;
-    color: #999;
+    color: #6b7280;
     font-style: italic;
 }
 
 .btn-limpar {
     width: 100%;
     margin-top: 15px;
-    background: #6c757d;
+    background: #374151;
     color: white;
-}
-
 }
 
 @media (max-width: 768px) {
@@ -209,11 +207,11 @@ button:active {
     position: fixed;
     top: 100px;
     right: 20px;
-    background: #28a745;
+    background: #166534;
     color: white;
     padding: 15px 25px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     opacity: 0;
     transform: translateX(400px);
     transition: all 0.3s ease;
@@ -224,5 +222,3 @@ button:active {
     opacity: 1;
     transform: translateX(0);
 }
-
-
