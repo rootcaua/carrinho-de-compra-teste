@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #090909 0%, #949394 100%);
     min-height: 100vh;
     padding-bottom: 20px;
 }
@@ -23,7 +23,7 @@ header {
 }
 
 header h1 {
-    color: #667eea;
+    color: #949394;
     font-size: 2em;
     font-weight: 700;
 }
@@ -55,7 +55,7 @@ main {
 }
 
 h2 {
-    color: #333;
+    color: #949394;
     margin-bottom: 25px;
     font-size: 1.8em;
     border-bottom: 3px solid #667eea;
@@ -96,7 +96,7 @@ h2 {
 
 button {
     background: white;
-    color: #667eea;
+    color: #949394;
     border: none;
     padding: 12px 24px;
     border-radius: 25px;
@@ -226,3 +226,4 @@ button:active {
     opacity: 1;
     transform: translateX(0);
 }
+
