@@ -87,8 +87,9 @@ btnLimpar.addEventListener("click", () => {
     if (carrinho.length > 0) {
         carrinho = [];
         atualizaCarrinho();
-        mostrarFeedback("carrinho limpo.");
+        mostrarFeedback("carrinho limpo");
     }
 });
+
 
 
