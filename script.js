@@ -2,7 +2,6 @@ const botoesAdicionar = document.querySelectorAll(".add-carrinho");
 const listaCarrinho = document.getElementById("lista-carrinho");
 const totalTexto = document.getElementById("total");
 const btnLimpar = document.getElementById("limpar-carrinho");
-const feedback = document.getElementById("feedback");
 
 let carrinho = [];
 
@@ -83,13 +82,8 @@ botoesAdicionar.forEach(botao => {
     });
 });
 
-btnLimpar.addEventListener("click", () => {
-    if (carrinho.length > 0) {
-        carrinho = [];
-        atualizaCarrinho();
-        mostrarFeedback("carrinho limpo");
-    }
-});
+
+
 
 
 
