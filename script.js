@@ -79,7 +79,7 @@ botoesAdicionar.forEach(botao => {
         const item = { nome, preco };
         carrinho.push(item);
         atualizaCarrinho();
-        mostrarFeedback(`${nome} adicionado ao carrinho!`);
+        mostrarFeedback(`${nome} adicionado ao carrinho`);
     });
 });
 
@@ -87,6 +87,7 @@ btnLimpar.addEventListener("click", () => {
     if (carrinho.length > 0) {
         carrinho = [];
         atualizaCarrinho();
-        mostrarFeedback("Carrinho limpo!");
+        mostrarFeedback("carrinho limpo");
     }
 });
+
