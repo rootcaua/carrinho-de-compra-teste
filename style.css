@@ -189,8 +189,6 @@ button:active {
     color: white;
 }
 
-.btn-limpar:hover {
-    background: #5a6268;
 }
 
 @media (max-width: 768px) {
@@ -226,4 +224,5 @@ button:active {
     opacity: 1;
     transform: translateX(0);
 }
+
 
